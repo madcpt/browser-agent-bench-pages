@@ -100,7 +100,7 @@ const DATA = [
   }
 ];
 
-const names = { ego: 'ego', bsk: 'BrowserSkill', kitesurf: 'Kitesurf' };
+const names = { ego: 'ego browser', bsk: 'BrowserSkill', kitesurf: 'Kitesurf' };
 const labels = { composite: '综合分', quality: '完成质量', valueIndex: 'Token 性价比指数' };
 const captions = { composite: '质量分与 Token 性价比指数的加权平均。', quality: '单项 40% + 组合 30% + 长程 30%。满分 100。', valueIndex: '每 Token 带来的质量分；本组最高者 = 100。不是实际美元成本。' };
 const quality = document.getElementById('quality-weight');

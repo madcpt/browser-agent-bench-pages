@@ -1,6 +1,6 @@
 # Browser Agent Bench — public scorecard
 
-A standalone GitHub Pages presentation of the 2026-11-16 benchmark snapshot. Contains page assets and three tool-level aggregates only. No per-attempt results, raw sessions, credentials or private benchmark source are included.
+A standalone GitHub Pages presentation of the 2026-11-16 benchmark snapshot. Contains page assets, three tool-level aggregates, and generated public task definitions / UI previews. No per-attempt results, raw sessions, credentials or grader implementation are included.
 
 ## Preview
 
@@ -15,3 +15,15 @@ GitHub Settings → Pages → Deploy from a branch → `main` / `(root)`. `.noje
 Edit the three explicitly reviewed aggregate records at the start of `app.js` and the snapshot date/conditions in `index.html`. Preserve component-bucket denominators and token categories. Do not copy raw logs or the removed `results/` tree into this repository.
 
 Default quality = singles 40% + combinations 30% + journeys 30%. Token value = quality per weighted token, normalized to the best observed stack = 100. Composite = quality 80% + token value 20%. Turnstile official test modes are separate. These are exploratory, single-repetition scores, not monetary prices or a stable leaderboard.
+
+## Shared task previews
+
+`task-catalog.json` and `demo/assets/` are generated from the original benchmark's task manifests, public stage briefs and React components. They contain no evaluation records or grader implementation. Each task has a deep link at `#task=<id>` and a full preview at `demo/lab.html?task=<id>`.
+
+Regenerate from the local benchmark checkout (with its existing build dependencies installed):
+
+```sh
+node scripts/export-tasks.mjs ../browser-agent-bench
+```
+
+The exporter records the source commit. It substitutes only a static-preview persistence adapter and asset paths; it does not change the original evaluation code. Public previews store drafts locally, do not grade outcomes, use same-origin iframe presentation, and do not offer Turnstile server verification. `scripts/demo-api.js` is preview infrastructure, not an authoritative grader.

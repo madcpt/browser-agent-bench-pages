@@ -1,0 +1,485 @@
+{
+  "sourceCommit": "518e2512f31b71eff4a60e340ff3fcd73ca30a13",
+  "tasks": [
+    {
+      "id": "cap-01-basic",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Input & menus",
+      "modules": [
+        {
+          "type": "basic",
+          "title": "Input & menus",
+          "brief": "Set Display name to Morgan Lee. Enable Email and SMS only. In the Tags multi-select choose Audit and Urgent only. Use the search shortcut (Ctrl+K or Meta+K) to find Archive and choose it. Open the card context menu and mark it Pinned. Reveal the hover menu and choose Compact."
+        }
+      ]
+    },
+    {
+      "id": "cap-02-form",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Conditional form",
+      "modules": [
+        {
+          "type": "form",
+          "title": "Conditional form",
+          "brief": "Select Company, country Canada, province Ontario. Use the autocomplete to choose Toronto. Add two contacts: Ada / ada@example.test and Lin / lin@example.test; remove any other contacts. Set separate billing to 18 Maple Road. Save draft, reload the page, confirm it restored, then save this stage."
+        }
+      ]
+    },
+    {
+      "id": "cap-03-dates",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Dates & ranges",
+      "modules": [
+        {
+          "type": "dates",
+          "title": "Dates & ranges",
+          "brief": "Set native date to 2027-01-04 and time to 14:30. In the custom calendar choose the range 2026-12-29 through 2027-01-03 inclusive. Select timezone Europe/London."
+        }
+      ]
+    },
+    {
+      "id": "cap-04-table",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Virtual inventory",
+      "modules": [
+        {
+          "type": "table",
+          "title": "Virtual inventory",
+          "brief": "Use the virtual inventory table: select records ITEM-101, ITEM-220 and ITEM-299 across searches/scrolling. Set the bulk status to Verified. Edit ITEM-220 quantity to 17. Keep all other records unchanged."
+        }
+      ]
+    },
+    {
+      "id": "cap-05-tree",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Tree & cascade",
+      "modules": [
+        {
+          "type": "tree",
+          "title": "Tree & cascade",
+          "brief": "Select exactly Europe / Germany / Berlin, Europe / France / Paris, and Asia / Japan / Osaka in the tree. Leave all other leaves unchecked. Use the location cascade to select Asia → Japan → Kyoto."
+        }
+      ]
+    },
+    {
+      "id": "cap-06-layers",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Layers & focus",
+      "modules": [
+        {
+          "type": "layers",
+          "title": "Layers & focus",
+          "brief": "Open the project drawer, enter Launch notes as its title. Open its nested Approvers dialog, choose Ada and Lin only, apply it, then apply the drawer. Open the action popover and choose Schedule. Preserve the drawer title."
+        }
+      ]
+    },
+    {
+      "id": "cap-07-pointer",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Drag & resize",
+      "modules": [
+        {
+          "type": "pointer",
+          "title": "Drag & resize",
+          "brief": "Drag the cards into order Echo, Alpha, Bravo, Charlie, Delta. Set the range slider to 67. Resize the preview panel to a width between 380 and 420 CSS pixels using its resize handle."
+        }
+      ]
+    },
+    {
+      "id": "cap-08-rich",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Rich document",
+      "modules": [
+        {
+          "type": "rich",
+          "title": "Rich document",
+          "brief": "Replace the document with heading Launch plan, a bold paragraph Approved, an unordered list containing Design then Ship, a link labelled Reference to https://example.test/reference, and a 2-column table with header Owner / Status and one row Ada / Ready. Use the rich-text editor toolbar and normal editing input. Perform Undo then Redo, preserving the final document."
+        }
+      ]
+    },
+    {
+      "id": "cap-09-embedded",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Embedded components",
+      "modules": [
+        {
+          "type": "embedded",
+          "title": "Embedded components",
+          "brief": "In the same-origin frame set Label to Local ready and press Apply. In the cross-origin frame set Label to Remote ready and press Apply. In its nested frame set Code to NEST-42 and apply it. In the open Shadow DOM component choose Canada and enter Open ready; in the closed Shadow DOM component choose Japan and enter Closed ready. Apply both components."
+        }
+      ]
+    },
+    {
+      "id": "cap-10-editors",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Editors & graphics",
+      "modules": [
+        {
+          "type": "editors",
+          "title": "Editors & graphics",
+          "brief": "In the CodeMirror JSON editor replace the document with {\"enabled\":true,\"limit\":25} (whitespace is free). In the spreadsheet set B2 to 140 and C3 to Approved. On the canvas drag the green box into the dashed Target area. On the SVG diagram select node Gamma. Keep other spreadsheet cells unchanged. Perform Undo code then Redo code, preserving the final JSON. After moving the canvas box, set Zoom to 150% and Pan to 50 pixels right."
+        }
+      ]
+    },
+    {
+      "id": "cap-11-files",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Files & browser boundaries",
+      "modules": [
+        {
+          "type": "files",
+          "title": "Files & browser boundaries",
+          "brief": "Download the CSV template. Correct ITEM-101 quantity from -1 to 7 in the local file; keep ITEM-220 quantity 4 unchanged. Upload the corrected CSV and validate it. Download the validated report. Open the preview in a new tab, acknowledge it there, and return. Press Confirm import and accept the native confirmation dialog before saving."
+        }
+      ]
+    },
+    {
+      "id": "cap-12-recovery",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "Async recovery",
+      "modules": [
+        {
+          "type": "recovery",
+          "title": "Async recovery",
+          "brief": "Load the delayed panel, select Ready, and enter Recovered once. Save the stage. Recover from the injected pre-save failure by retrying once; after an uncertain save response, use Check saved state instead of submitting again. The final record must exist exactly once."
+        }
+      ]
+    },
+    {
+      "id": "combo-1",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "medium",
+      "timeout_seconds": 900,
+      "title": "Input & menus → Conditional form → Dates & ranges",
+      "modules": [
+        {
+          "type": "basic",
+          "title": "Input & menus",
+          "brief": "Set Display name to Morgan Lee. Enable Email and SMS only. In the Tags multi-select choose Audit and Urgent only. Use the search shortcut (Ctrl+K or Meta+K) to find Archive and choose it. Open the card context menu and mark it Pinned. Reveal the hover menu and choose Compact."
+        },
+        {
+          "type": "form",
+          "title": "Conditional form",
+          "brief": "Select Company, country Canada, province Ontario. Use the autocomplete to choose Toronto. Add two contacts: Ada / ada@example.test and Lin / lin@example.test; remove any other contacts. Set separate billing to 18 Maple Road. Save draft, reload the page, confirm it restored, then save this stage."
+        },
+        {
+          "type": "dates",
+          "title": "Dates & ranges",
+          "brief": "Set native date to 2027-01-04 and time to 14:30. In the custom calendar choose the range 2026-12-29 through 2027-01-03 inclusive. Select timezone Europe/London."
+        }
+      ]
+    },
+    {
+      "id": "combo-2",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "medium",
+      "timeout_seconds": 900,
+      "title": "Virtual inventory → Tree & cascade → Drag & resize",
+      "modules": [
+        {
+          "type": "table",
+          "title": "Virtual inventory",
+          "brief": "Use the virtual inventory table: select records ITEM-101, ITEM-220 and ITEM-299 across searches/scrolling. Set the bulk status to Verified. Edit ITEM-220 quantity to 17. Keep all other records unchanged."
+        },
+        {
+          "type": "tree",
+          "title": "Tree & cascade",
+          "brief": "Select exactly Europe / Germany / Berlin, Europe / France / Paris, and Asia / Japan / Osaka in the tree. Leave all other leaves unchecked. Use the location cascade to select Asia → Japan → Kyoto."
+        },
+        {
+          "type": "pointer",
+          "title": "Drag & resize",
+          "brief": "Drag the cards into order Echo, Alpha, Bravo, Charlie, Delta. Set the range slider to 67. Resize the preview panel to a width between 380 and 420 CSS pixels using its resize handle."
+        }
+      ]
+    },
+    {
+      "id": "combo-3",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "medium",
+      "timeout_seconds": 900,
+      "title": "Rich document → Embedded components → Editors & graphics",
+      "modules": [
+        {
+          "type": "rich",
+          "title": "Rich document",
+          "brief": "Replace the document with heading Launch plan, a bold paragraph Approved, an unordered list containing Design then Ship, a link labelled Reference to https://example.test/reference, and a 2-column table with header Owner / Status and one row Ada / Ready. Use the rich-text editor toolbar and normal editing input. Perform Undo then Redo, preserving the final document."
+        },
+        {
+          "type": "embedded",
+          "title": "Embedded components",
+          "brief": "In the same-origin frame set Label to Local ready and press Apply. In the cross-origin frame set Label to Remote ready and press Apply. In its nested frame set Code to NEST-42 and apply it. In the open Shadow DOM component choose Canada and enter Open ready; in the closed Shadow DOM component choose Japan and enter Closed ready. Apply both components."
+        },
+        {
+          "type": "editors",
+          "title": "Editors & graphics",
+          "brief": "In the CodeMirror JSON editor replace the document with {\"enabled\":true,\"limit\":25} (whitespace is free). In the spreadsheet set B2 to 140 and C3 to Approved. On the canvas drag the green box into the dashed Target area. On the SVG diagram select node Gamma. Keep other spreadsheet cells unchanged. Perform Undo code then Redo code, preserving the final JSON. After moving the canvas box, set Zoom to 150% and Pan to 50 pixels right."
+        }
+      ]
+    },
+    {
+      "id": "combo-4",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "medium",
+      "timeout_seconds": 900,
+      "title": "Files & browser boundaries → Layers & focus → Async recovery",
+      "modules": [
+        {
+          "type": "files",
+          "title": "Files & browser boundaries",
+          "brief": "Download the CSV template. Correct ITEM-101 quantity from -1 to 7 in the local file; keep ITEM-220 quantity 4 unchanged. Upload the corrected CSV and validate it. Download the validated report. Open the preview in a new tab, acknowledge it there, and return. Press Confirm import and accept the native confirmation dialog before saving."
+        },
+        {
+          "type": "layers",
+          "title": "Layers & focus",
+          "brief": "Open the project drawer, enter Launch notes as its title. Open its nested Approvers dialog, choose Ada and Lin only, apply it, then apply the drawer. Open the action popover and choose Schedule. Preserve the drawer title."
+        },
+        {
+          "type": "recovery",
+          "title": "Async recovery",
+          "brief": "Load the delayed panel, select Ready, and enter Recovered once. Save the stage. Recover from the injected pre-save failure by retrying once; after an uncertain save response, use Check saved state instead of submitting again. The final record must exist exactly once."
+        }
+      ]
+    },
+    {
+      "id": "journey-1",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "long",
+      "timeout_seconds": 1800,
+      "title": "Input & menus → Conditional form → Dates & ranges → Virtual inventory → Tree & cascade → Layers & focus → Drag & resize → Rich document → Embedded components → Editors & graphics → Files & browser boundaries → Async recovery",
+      "modules": [
+        {
+          "type": "basic",
+          "title": "Input & menus",
+          "brief": "Set Display name to Morgan Lee. Enable Email and SMS only. In the Tags multi-select choose Audit and Urgent only. Use the search shortcut (Ctrl+K or Meta+K) to find Archive and choose it. Open the card context menu and mark it Pinned. Reveal the hover menu and choose Compact."
+        },
+        {
+          "type": "form",
+          "title": "Conditional form",
+          "brief": "Select Company, country Canada, province Ontario. Use the autocomplete to choose Toronto. Add two contacts: Ada / ada@example.test and Lin / lin@example.test; remove any other contacts. Set separate billing to 18 Maple Road. Save draft, reload the page, confirm it restored, then save this stage."
+        },
+        {
+          "type": "dates",
+          "title": "Dates & ranges",
+          "brief": "Set native date to 2027-01-04 and time to 14:30. In the custom calendar choose the range 2026-12-29 through 2027-01-03 inclusive. Select timezone Europe/London."
+        },
+        {
+          "type": "table",
+          "title": "Virtual inventory",
+          "brief": "Use the virtual inventory table: select records ITEM-101, ITEM-220 and ITEM-299 across searches/scrolling. Set the bulk status to Verified. Edit ITEM-220 quantity to 17. Keep all other records unchanged."
+        },
+        {
+          "type": "tree",
+          "title": "Tree & cascade",
+          "brief": "Select exactly Europe / Germany / Berlin, Europe / France / Paris, and Asia / Japan / Osaka in the tree. Leave all other leaves unchecked. Use the location cascade to select Asia → Japan → Kyoto."
+        },
+        {
+          "type": "layers",
+          "title": "Layers & focus",
+          "brief": "Open the project drawer, enter Launch notes as its title. Open its nested Approvers dialog, choose Ada and Lin only, apply it, then apply the drawer. Open the action popover and choose Schedule. Preserve the drawer title."
+        },
+        {
+          "type": "pointer",
+          "title": "Drag & resize",
+          "brief": "Drag the cards into order Echo, Alpha, Bravo, Charlie, Delta. Set the range slider to 67. Resize the preview panel to a width between 380 and 420 CSS pixels using its resize handle."
+        },
+        {
+          "type": "rich",
+          "title": "Rich document",
+          "brief": "Replace the document with heading Launch plan, a bold paragraph Approved, an unordered list containing Design then Ship, a link labelled Reference to https://example.test/reference, and a 2-column table with header Owner / Status and one row Ada / Ready. Use the rich-text editor toolbar and normal editing input. Perform Undo then Redo, preserving the final document."
+        },
+        {
+          "type": "embedded",
+          "title": "Embedded components",
+          "brief": "In the same-origin frame set Label to Local ready and press Apply. In the cross-origin frame set Label to Remote ready and press Apply. In its nested frame set Code to NEST-42 and apply it. In the open Shadow DOM component choose Canada and enter Open ready; in the closed Shadow DOM component choose Japan and enter Closed ready. Apply both components."
+        },
+        {
+          "type": "editors",
+          "title": "Editors & graphics",
+          "brief": "In the CodeMirror JSON editor replace the document with {\"enabled\":true,\"limit\":25} (whitespace is free). In the spreadsheet set B2 to 140 and C3 to Approved. On the canvas drag the green box into the dashed Target area. On the SVG diagram select node Gamma. Keep other spreadsheet cells unchanged. Perform Undo code then Redo code, preserving the final JSON. After moving the canvas box, set Zoom to 150% and Pan to 50 pixels right."
+        },
+        {
+          "type": "files",
+          "title": "Files & browser boundaries",
+          "brief": "Download the CSV template. Correct ITEM-101 quantity from -1 to 7 in the local file; keep ITEM-220 quantity 4 unchanged. Upload the corrected CSV and validate it. Download the validated report. Open the preview in a new tab, acknowledge it there, and return. Press Confirm import and accept the native confirmation dialog before saving."
+        },
+        {
+          "type": "recovery",
+          "title": "Async recovery",
+          "brief": "Load the delayed panel, select Ready, and enter Recovered once. Save the stage. Recover from the injected pre-save failure by retrying once; after an uncertain save response, use Check saved state instead of submitting again. The final record must exist exactly once."
+        }
+      ]
+    },
+    {
+      "id": "journey-2",
+      "version": "1.0.0",
+      "suite": "functional",
+      "tier": "long",
+      "timeout_seconds": 1800,
+      "title": "Async recovery → Files & browser boundaries → Editors & graphics → Embedded components → Rich document → Drag & resize → Layers & focus → Tree & cascade → Virtual inventory → Dates & ranges → Conditional form → Input & menus",
+      "modules": [
+        {
+          "type": "recovery",
+          "title": "Async recovery",
+          "brief": "Load the delayed panel, select Ready, and enter Recovered once. Save the stage. Recover from the injected pre-save failure by retrying once; after an uncertain save response, use Check saved state instead of submitting again. The final record must exist exactly once."
+        },
+        {
+          "type": "files",
+          "title": "Files & browser boundaries",
+          "brief": "Download the CSV template. Correct ITEM-101 quantity from -1 to 7 in the local file; keep ITEM-220 quantity 4 unchanged. Upload the corrected CSV and validate it. Download the validated report. Open the preview in a new tab, acknowledge it there, and return. Press Confirm import and accept the native confirmation dialog before saving."
+        },
+        {
+          "type": "editors",
+          "title": "Editors & graphics",
+          "brief": "In the CodeMirror JSON editor replace the document with {\"enabled\":true,\"limit\":25} (whitespace is free). In the spreadsheet set B2 to 140 and C3 to Approved. On the canvas drag the green box into the dashed Target area. On the SVG diagram select node Gamma. Keep other spreadsheet cells unchanged. Perform Undo code then Redo code, preserving the final JSON. After moving the canvas box, set Zoom to 150% and Pan to 50 pixels right."
+        },
+        {
+          "type": "embedded",
+          "title": "Embedded components",
+          "brief": "In the same-origin frame set Label to Local ready and press Apply. In the cross-origin frame set Label to Remote ready and press Apply. In its nested frame set Code to NEST-42 and apply it. In the open Shadow DOM component choose Canada and enter Open ready; in the closed Shadow DOM component choose Japan and enter Closed ready. Apply both components."
+        },
+        {
+          "type": "rich",
+          "title": "Rich document",
+          "brief": "Replace the document with heading Launch plan, a bold paragraph Approved, an unordered list containing Design then Ship, a link labelled Reference to https://example.test/reference, and a 2-column table with header Owner / Status and one row Ada / Ready. Use the rich-text editor toolbar and normal editing input. Perform Undo then Redo, preserving the final document."
+        },
+        {
+          "type": "pointer",
+          "title": "Drag & resize",
+          "brief": "Drag the cards into order Echo, Alpha, Bravo, Charlie, Delta. Set the range slider to 67. Resize the preview panel to a width between 380 and 420 CSS pixels using its resize handle."
+        },
+        {
+          "type": "layers",
+          "title": "Layers & focus",
+          "brief": "Open the project drawer, enter Launch notes as its title. Open its nested Approvers dialog, choose Ada and Lin only, apply it, then apply the drawer. Open the action popover and choose Schedule. Preserve the drawer title."
+        },
+        {
+          "type": "tree",
+          "title": "Tree & cascade",
+          "brief": "Select exactly Europe / Germany / Berlin, Europe / France / Paris, and Asia / Japan / Osaka in the tree. Leave all other leaves unchecked. Use the location cascade to select Asia → Japan → Kyoto."
+        },
+        {
+          "type": "table",
+          "title": "Virtual inventory",
+          "brief": "Use the virtual inventory table: select records ITEM-101, ITEM-220 and ITEM-299 across searches/scrolling. Set the bulk status to Verified. Edit ITEM-220 quantity to 17. Keep all other records unchanged."
+        },
+        {
+          "type": "dates",
+          "title": "Dates & ranges",
+          "brief": "Set native date to 2027-01-04 and time to 14:30. In the custom calendar choose the range 2026-12-29 through 2027-01-03 inclusive. Select timezone Europe/London."
+        },
+        {
+          "type": "form",
+          "title": "Conditional form",
+          "brief": "Select Company, country Canada, province Ontario. Use the autocomplete to choose Toronto. Add two contacts: Ada / ada@example.test and Lin / lin@example.test; remove any other contacts. Set separate billing to 18 Maple Road. Save draft, reload the page, confirm it restored, then save this stage."
+        },
+        {
+          "type": "basic",
+          "title": "Input & menus",
+          "brief": "Set Display name to Morgan Lee. Enable Email and SMS only. In the Tags multi-select choose Audit and Urgent only. Use the search shortcut (Ctrl+K or Meta+K) to find Archive and choose it. Open the card context menu and mark it Pinned. Reveal the hover menu and choose Compact."
+        }
+      ]
+    },
+    {
+      "id": "guard-turnstile-pass",
+      "version": "1.0.0",
+      "suite": "guard",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "turnstile-pass",
+      "modules": [
+        {
+          "type": "turnstile-pass",
+          "title": "turnstile-pass",
+          "brief": "Complete the visible Turnstile test widget and submit the protected form with Note set to Protected ready. Save the stage after the server reports accepted."
+        }
+      ]
+    },
+    {
+      "id": "guard-turnstile-fail",
+      "version": "1.0.0",
+      "suite": "guard",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "turnstile-fail",
+      "modules": [
+        {
+          "type": "turnstile-fail",
+          "title": "turnstile-fail",
+          "brief": "Attempt the protected form with Note set to Protected ready. This official test widget intentionally fails; preserve the note and record the rejected outcome without creating an accepted submission."
+        }
+      ]
+    },
+    {
+      "id": "guard-turnstile-expired",
+      "version": "1.0.0",
+      "suite": "guard",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "turnstile-expired",
+      "modules": [
+        {
+          "type": "turnstile-expired",
+          "title": "turnstile-expired",
+          "brief": "Complete the test widget and submit Note Protected ready. The test validator intentionally reports timeout-or-duplicate. Use Reset verification and record the expired outcome; do not treat it as accepted."
+        }
+      ]
+    },
+    {
+      "id": "guard-turnstile-interactive",
+      "version": "1.0.0",
+      "suite": "guard",
+      "tier": "short",
+      "timeout_seconds": 480,
+      "title": "turnstile-interactive",
+      "modules": [
+        {
+          "type": "turnstile-interactive",
+          "title": "turnstile-interactive",
+          "brief": "Complete the official forced-interactive test widget through normal browser interaction, then submit Note Protected ready. If human action is required and cannot be completed by the assigned tool, report that limitation; do not bypass or inject verification tokens."
+        }
+      ]
+    }
+  ]
+}
