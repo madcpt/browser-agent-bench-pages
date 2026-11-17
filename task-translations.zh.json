@@ -1,0 +1,18 @@
+{
+  "basic": {"title":"输入与菜单","brief":"将 Display name 设为 Morgan Lee。只启用 Email 和 SMS。Tags 多选框只选 Audit、Urgent。用 Ctrl+K 或 Meta+K 搜索并选择 Archive。打开卡片右键菜单将其标记为 Pinned。展开悬停菜单并选择 Compact。"},
+  "form": {"title":"条件表单","brief":"选择 Company、Canada、Ontario，并通过自动补全选择 Toronto。添加两位联系人：Ada / ada@example.test 和 Lin / lin@example.test，删除其他联系人。设置独立账单地址 18 Maple Road。保存草稿、刷新确认恢复，再保存本阶段。"},
+  "dates": {"title":"日期与范围","brief":"将原生日期设为 2027-01-04、时间设为 14:30。在自定义日历中选择 2026-12-29 至 2027-01-03（含首尾）。时区选择 Europe/London。"},
+  "table": {"title":"虚拟库存表格","brief":"通过搜索和滚动，在虚拟表格中选中 ITEM-101、ITEM-220、ITEM-299。批量将状态设为 Verified，把 ITEM-220 的数量改为 17，其他记录保持不变。"},
+  "tree": {"title":"树选择与级联","brief":"树中仅选择 Europe / Germany / Berlin、Europe / France / Paris、Asia / Japan / Osaka。其他叶节点不勾选。级联位置选择 Asia → Japan → Kyoto。"},
+  "layers": {"title":"嵌套弹层与焦点","brief":"打开项目抽屉，标题填写 Launch notes。打开其嵌套的 Approvers 对话框，只选 Ada、Lin，应用对话框后再应用抽屉。打开操作浮层选择 Schedule，并保留抽屉标题。"},
+  "pointer": {"title":"拖拽与缩放","brief":"将卡片拖成 Echo、Alpha、Bravo、Charlie、Delta 的顺序。滑块设为 67。通过缩放手柄将预览面板宽度调到 380–420 CSS 像素之间。"},
+  "rich": {"title":"富文本文档","brief":"用富文本工具栏和正常输入，将文档替换为：标题 Launch plan、加粗段落 Approved、依次含 Design 和 Ship 的无序列表、文字 Reference 且地址为 https://example.test/reference 的链接，以及表头 Owner / Status、数据行 Ada / Ready 的两列表格。执行 Undo 再 Redo，并保留最终文档。"},
+  "embedded": {"title":"嵌入组件","brief":"同源 iframe 的 Label 填 Local ready 并 Apply；跨域 iframe 的 Label 填 Remote ready 并 Apply。其嵌套 iframe 的 Code 填 NEST-42 并应用。open Shadow DOM 选择 Canada、填 Open ready；closed Shadow DOM 选择 Japan、填 Closed ready。分别应用两个组件。"},
+  "editors": {"title":"编辑器与图形","brief":"将 CodeMirror JSON 改为 {\"enabled\":true,\"limit\":25}，空白格式不限。电子表格 B2 填 140、C3 填 Approved，其他单元格不变。把画布绿框拖进虚线 Target 区，SVG 选择 Gamma。执行 Undo code 再 Redo code，并保留最终 JSON。移动绿框后，Zoom 设为 150%，Pan 向右 50 像素。"},
+  "files": {"title":"文件与浏览器边界","brief":"下载 CSV 模板，在本地将 ITEM-101 的数量从 -1 改为 7，保留 ITEM-220 的数量 4。上传修正文件并验证，下载验证报告。在新标签打开预览并确认，然后返回。点击 Confirm import 并接受原生确认对话框，再保存本阶段。"},
+  "recovery": {"title":"异步故障恢复","brief":"加载延迟面板，选择 Ready，填写 Recovered once，保存本阶段。遇到提交前的注入故障后重试一次；遇到结果不确定的响应后，使用 Check saved state 查询，不要再次提交。最终记录必须且只能有一条。"},
+  "turnstile-pass": {"title":"Turnstile 通过","brief":"完成可见的 Turnstile 测试组件，Note 填 Protected ready 并提交受保护表单。服务端报告 accepted 后再保存本阶段。"},
+  "turnstile-fail": {"title":"Turnstile 拒绝","brief":"Note 填 Protected ready，尝试提交受保护表单。此官方测试组件故意失败；保留 Note 并记录拒绝结果，不创建 accepted 提交。"},
+  "turnstile-expired": {"title":"Turnstile 过期","brief":"完成测试组件并提交 Note Protected ready。测试验证器会故意返回 timeout-or-duplicate。使用 Reset verification，记录过期结果，不将其视为 accepted。"},
+  "turnstile-interactive": {"title":"Turnstile 交互验证","brief":"通过正常浏览器操作完成官方强制交互测试组件，然后提交 Note Protected ready。如果需要人工操作且工具无法完成，应报告限制；不得绕过验证或注入验证 token。"}
+}

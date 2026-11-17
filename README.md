@@ -1,6 +1,18 @@
 # Browser Agent Bench — public scorecard
 
+**English** · [简体中文](README.zh-CN.md)
+
+[Open the live site](https://madcpt.github.io/browser-agent-bench-pages/?lang=en)
+
 A standalone GitHub Pages presentation of the 2026-11-16 benchmark snapshot. Contains page assets, three tool-level aggregates, and generated public task definitions / UI previews. No per-attempt results, raw sessions, credentials or grader implementation are included.
+
+## Language selection
+
+Use the language selector in the page header, or share `?lang=en` / `?lang=zh`. The browser remembers the selection. Task deep links (`#task=<id>`), scoring weights, task filters and the selected stage are preserved when switching.
+
+The leaderboard, tool profiles, methodology, task titles and task instructions are bilingual. Original task controls, option values and target strings retain their wording to preserve task semantics; preview notices and instructions follow the selected language.
+
+Page translations live in `i18n.js`; Chinese task translations are in `task-translations.zh.json`. English task instructions are exported from the original manifests.
 
 ## Preview
 
